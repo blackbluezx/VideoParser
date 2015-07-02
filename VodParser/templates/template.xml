@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+    {% for item in source %}
+    <video>
+	    <rate>{{item.rate}}</rate>
+	    <furls>
+		  {% for furl in item.furls %}
+		  <furl>{{furl}}</furl>
+		  {% endfor %}
+		</furls>
+	</video>
+    {% endfor %}
+</root>
